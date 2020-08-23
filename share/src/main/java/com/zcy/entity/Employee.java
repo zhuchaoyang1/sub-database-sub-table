@@ -2,10 +2,7 @@ package com.zcy.entity;
 
 import lombok.Data;
 
-import javax.persistence.Basic;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Data
 @Entity
@@ -13,6 +10,7 @@ import javax.persistence.Table;
 public class Employee {
 
     @Id
+    @EmbeddedId
     private Long eId;
 
     @Basic
